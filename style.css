@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+:root {
+    /* ### Primary */
+    --Pink: hsl(322, 100%, 66%);
+    /* ### Neutral */
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    font-size: .8rem;
+    border-radius: 50px;
+}
+
+.header {
+    background-image: url(images/bg-hero-mobile.svg);
+    background-color: var(--Very-Pale-Cyan);
+}
+
+/* Navbar  */
+
+.navbar__logo {
+    width: 5rem;
+}
+
+.btn-navbar {
+    padding: .3rem 2rem;
+    box-shadow: 1px 1px 8px 4px rgba(148, 148, 148, 0.19);
+    -webkit-box-shadow: 1px 1px 8px 4px rgba(148, 148, 148, 0.19);
+    -moz-box-shadow: 1px 1px 8px 4px rgba(148, 148, 148, 0.19);
+}
+
+.container-fluid {
+    padding: 2rem;
+}
+
+/* Hero Banner  */
+
+.hero-banner {
+    text-align: center;
+}
+
+.hero-banner>* {
+    margin-bottom: 2rem;
+}
+
+.btn-pink {
+    background-color: var(--Pink);
+    color: #fff;
+    padding: 1rem 4rem;
+}
+
+.btn-pink:hover {
+    background-color: var(--Pink);
+    color: #fff;
+    opacity: .6;
+}
+
+/* Feature  */
+
+.feature {
+    margin-bottom: 10rem;
+}
+
+.feature-card {
+    flex-direction: column;
+}
+
+.card {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px 4px rgba(148, 148, 148, 0.19);
+    -webkit-box-shadow: 1px 1px 8px 4px rgba(148, 148, 148, 0.19);
+    -moz-box-shadow: 1px 1px 8px 4px rgba(148, 148, 148, 0.19);
+    text-align: center;
+}
+
+/* Call to Action  */
+.cta {
+    position: absolute;
+    margin-top: -150px;
+    width: 100%;
+}
+
+.cta-card {
+    max-width: 700px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.btn-cta {
+    font-size: 16px;
+    padding: .5rem 1rem;
+}
+
+
+/* About Us  */
+
+.about-us {
+    background-color: var(--Very-Dark-Cyan);
+    color: #fff;
+    padding-top: 10rem;
+}
+
+.about-us a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.about-us a:hover {
+    opacity: .7;
+}
+
+.about-us__logo {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+.socmed {
+    text-align: center;
+}
+
+.socmed a {
+    display: inline;
+}
+
+.socmed__links {
+    border: 1px solid #FFF;
+    border-radius: 100px;
+    padding: .5rem;
+    margin-right: 1rem;
+}
+
+.socmed__links:hover {
+    color: var(--Pink);
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:767px) {
+    .navbar__logo {
+        width: 10rem;
+    }
+
+    .hero-banner__text {
+        text-align: left;
+    }
+
+    .feature-card {
+        flex-direction: row-reverse;
+        text-align: left;
+        align-items: center;
+    }
+
+    .reverse-row {
+        flex-direction: row;
+    }
+
+    .socmed a {
+        display: inline-block;
+    }
+
+    .copyright {
+        text-align: right;
+        font-size: 1rem;
+    }
+
+}
